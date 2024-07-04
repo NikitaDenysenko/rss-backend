@@ -16,8 +16,8 @@ startCronJob()
 
 
 app.get('/posts', async (req, res) => {
-   const limit = parseInt(req.query.limit) || 10; // Кількість записів на сторінку, за замовчуванням 10
-   const offset = parseInt(req.query.offset) || 0; // Початкова точка для вибірки, за замовчуванням 0
+   const limit = parseInt(req.query.limit) || 10;
+   const offset = parseInt(req.query.offset) || 0;
 
    try {
       const { count, rows } = await Post.findAndCountAll({
