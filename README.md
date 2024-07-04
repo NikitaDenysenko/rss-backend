@@ -25,7 +25,7 @@ yarn run start
 
 ## Running the Docker
 
-To run the Docker, execute the following commands
+To run the Docker, execute the following commands, from the root directory
 
 ```bash
 cd docker
